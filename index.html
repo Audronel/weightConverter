@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        margin-top: 70px;
+        background: #333;
+        color:#fff;
+    }
+    option {
+        color: black;
+    }
+</style>
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center display-4 mb-3">Weight Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="units">
+                            <option value="">Select... </option>
+                            <option value="pounds">Pounds</option>
+                            <option value="grams">Grams</option>
+                            <option value="kilograms">Kilograms</option>
+                            <option value="ounces">Ounces</option>
+                        </select>
+                    </div>
+                    <div class="form-goup mb-4">
+                        <input
+                        id = "unitInput" 
+                        type="number" 
+                        class="form-control form-control-lg" 
+                        placeholder="Enter Value ...">
+                    </div>
+                </form>
+                <div id = "output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-body">
+                            <h4>Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-success mb-2">
+                        <div class="card-body">
+                            <h4>Kilograms:</h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-warning mb-2">
+                        <div class="card-body">
+                            <h4>Pounds:</h4>
+                            <div id="lbOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-body">
+                            <h4>Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>    
+</body>
+</html>
